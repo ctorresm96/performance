@@ -8,6 +8,7 @@ import { Injectable } from '@angular/core';
 import { Client } from '../interfaces/user.interface';
 
 import * as moment from 'moment';
+// import { sub } from 'date-fns';
 
 @Injectable({
   providedIn: 'root',
@@ -31,10 +32,11 @@ export class ClientsService {
     };
   }
 
-  private generateDate(): string {
+  private generateDate(): string | Date {
     const days = this.getRandomInt(0, 1000);
-
+    
     return moment().subtract(days, 'days').toISOString();
+    // return sub(new Date(), { days });
   }
 
   private generateName(): string {

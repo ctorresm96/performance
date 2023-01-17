@@ -1,6 +1,6 @@
 export interface Client {
   name: string;
   score: number;
-  registerDate: string;
+  registerDate: string | Date;
   id?: string;
 }

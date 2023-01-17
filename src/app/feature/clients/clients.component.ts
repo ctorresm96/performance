@@ -15,8 +15,8 @@ export class ClientsComponent implements OnInit {
   constructor(public clientService: ClientsService) {}
 
   ngOnInit(): void {
-    this.localClients = this.clientService.generateClients(1000);
-    this.globalClients = this.clientService.generateClients(1000);
+    this.localClients = this.clientService.generateClients(10);
+    this.globalClients = this.clientService.generateClients(10);
   }
 
   add(list: Client[], newName): void {

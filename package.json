@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --project=performance",
+    "build:stats": "ng build --project=performance --stats-json",
+    "analyze": "webpack-bundle-analyzer dist/performance/stats.json",
     "watch": "ng build --watch --configuration development --project=performance",
     "test": "ng test --code-coverage=true --watch=false --browsers=HeadlessChrome --project=performance",
     "mock-serve:start": "./node_modules/.bin/bcp-serve mock --start",
@@ -28,6 +30,7 @@
     "@bcp/ng-core-v4": "^1.0.0",
     "@bcp/schematics": "^4.0.1",
     "@bcp/stl-ui-components": "^1.52.0",
+    "date-fns": "^2.29.3",
     "moment": "^2.29.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
@@ -50,6 +53,7 @@
     "karma-junit-reporter": "^2.0.0",
     "karma-mocha-reporter": "^2.2.5",
     "puppeteer": "^15.0.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "webpack-bundle-analyzer": "^4.7.0"
   }
 }
