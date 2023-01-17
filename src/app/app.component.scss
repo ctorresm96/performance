@@ -1,0 +1,16 @@
+.main__body {
+  min-height: calc(100vh - 64px - 96px);
+  padding: 50px;
+  width: 100%;
+}
+
+.main::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 96px;
+  left: 0px;
+  opacity: 0.2;
+}

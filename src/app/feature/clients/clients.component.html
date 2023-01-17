@@ -1,0 +1,19 @@
+<h4>Listado de clientes</h4>
+<hr />
+
+<div class="clients mt-5">
+  <div class="clients__local">
+    <app-table
+      [clients]="localClients"
+      [title]="'Clientes Nacionales'"
+      (newClient)="add(localClients, $event)"
+    ></app-table>
+  </div>
+  <div class="clients__global">
+    <app-table
+      [clients]="globalClients"
+      [title]="'Clientes Globales'"
+      (newClient)="add(globalClients, $event)"
+    ></app-table>
+  </div>
+</div>

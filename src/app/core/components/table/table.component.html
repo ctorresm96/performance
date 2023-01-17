@@ -1,0 +1,63 @@
+<bcp-title family="demi" size="sm">{{ title }}</bcp-title>
+
+<div class="table__input">
+  <bcp-input
+    bcpCtrlForm
+    type="text"
+    label="Nuevo cliente"
+    class="mt-4"
+    [formControl]="nameControl"
+  ></bcp-input>
+  <bcp-button
+    shape="circle"
+    tier="primary"
+    size="md"
+    accessible-aria-label="Siguiente"
+    class="mt-2 ml-4"
+    (ctrlClick)="registerClient()"
+  >
+    <bcp-icon name="plus-r"></bcp-icon>
+  </bcp-button>
+</div>
+
+<bcp-table>
+  <bcp-table-row>
+    <bcp-table-col>
+      <bcp-paragraph family="demi" size="sm" color="onsurface-800">
+        FEC. REGISTRO
+      </bcp-paragraph>
+    </bcp-table-col>
+    <bcp-table-col>
+      <bcp-paragraph family="demi" size="sm" color="onsurface-800">
+        NOMBRE
+      </bcp-paragraph>
+    </bcp-table-col>
+    <bcp-table-col>
+      <bcp-paragraph family="demi" size="sm" color="onsurface-800">
+        PJE. CREDITICIO (1-5)
+      </bcp-paragraph>
+    </bcp-table-col>
+  </bcp-table-row>
+
+  <bcp-table-row *ngFor="let client of clients">
+    <bcp-table-col>
+      <bcp-paragraph family="regular" size="sm" color="onsurface-800">
+        {{ client.registerDate | customDateFormat }}
+      </bcp-paragraph>
+    </bcp-table-col>
+    <bcp-table-col>
+      <bcp-paragraph family="regular" size="sm" color="onsurface-800">
+        {{ client.name }}
+      </bcp-paragraph>
+    </bcp-table-col>
+    <bcp-table-col>
+      <div class="score" [class]="evaluateScore(client.score)">
+        {{ client.score }}
+      </div>
+    </bcp-table-col>
+  </bcp-table-row>
+
+  <bcp-table-row class="p-1" *ngIf="clients.length === 0">
+    <small> No hay datos.</small>
+  </bcp-table-row>
+</bcp-table>

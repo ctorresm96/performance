@@ -4,9 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "ng build --project=performance",
+    "watch": "ng build --watch --configuration development --project=performance",
+    "test": "ng test --code-coverage=true --watch=false --browsers=HeadlessChrome --project=performance",
+    "mock-serve:start": "./node_modules/.bin/bcp-serve mock --start",
+    "build:dev": "ng build --configuration production --project=performance",
+    "build:cert": "ng build --configuration production --project=performance",
+    "build:prod": "ng build --configuration production --project=performance",
+    "lint": "eslint --ext .ts src",
+    "lint-report:ntlc": "eslint -f html --ext .ts src > ntlc.html"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +24,11 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
+    "@bcp/js-core": "^2.6.6",
+    "@bcp/ng-core-v4": "^1.0.0",
+    "@bcp/schematics": "^4.0.1",
+    "@bcp/stl-ui-components": "^1.52.0",
+    "moment": "^2.29.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -26,13 +37,19 @@
     "@angular-devkit/build-angular": "^14.2.10",
     "@angular/cli": "~14.2.10",
     "@angular/compiler-cli": "^14.2.0",
+    "@bcp/eslint-plugin-ng-project": "^1.2.1",
+    "@bcp/mock-serve": "^1.2.0",
     "@types/jasmine": "~4.0.0",
+    "is-docker": "^2.0.0",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "karma-junit-reporter": "^2.0.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "puppeteer": "^15.0.0",
     "typescript": "~4.7.2"
   }
 }

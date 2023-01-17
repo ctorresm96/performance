@@ -1,0 +1,28 @@
+<bcp-title size="lg" family="regular">Home section</bcp-title>
+<hr />
+
+<bcp-chart-pie>
+  <bcp-chart-pie-graph-default
+    [chartData]="chartData"
+    size="md"
+    [currency]="currency"
+  >
+  </bcp-chart-pie-graph-default>
+  <bcp-chart-pie-legend-default
+    [chartData]="chartData"
+    size="md"
+    [currency]="currency"
+  >
+  </bcp-chart-pie-legend-default>
+</bcp-chart-pie>
+
+<br>
+
+<bcp-button class="mr-2" size="sm" (ctrlClick)="changeCurrency('S/')">
+  Change to Soles
+</bcp-button>
+<bcp-button class="mr-2" size="sm" (ctrlClick)="changeCurrency('$')">
+  Change to Dollars
+</bcp-button>
+<bcp-button class="mr-2" size="sm" (ctrlClick)="addItem()">Add Item</bcp-button>
+<bcp-button class="mr-2" size="sm" (ctrlClick)="removeItem()">Remove Item</bcp-button>

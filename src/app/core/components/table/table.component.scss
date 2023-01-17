@@ -1,0 +1,26 @@
+.table {
+  &__input {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+  }
+}
+
+.score {
+  text-shadow: 0 0 1px #000;
+  -moz-text-shadow: 0 0 1px #000;
+  -webkit-text-shadow: 0 0 1px #000;
+  font-size: 24px;
+}
+
+.low {
+  color: red;
+}
+
+.regular {
+  color: yellow;
+}
+
+.high {
+  color: rgb(47, 255, 78);
+}

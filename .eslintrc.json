@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:@bcp/ng-project/recommended"],
+  "plugins": ["@bcp/ng-project"],
+  "rules": {
+    "import/order": "off"
+  }
+}

@@ -25,10 +25,16 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@bcp/stl-ui-components/dist/assets/",
+                "output": "./assets/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@bcp/stl-ui-components/dist/bcp_web_ui_components/bcp_web_ui_components.scss"
             ],
             "scripts": []
           },
@@ -103,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "defaultCollection": "@bcp/schematics"
   }
 }

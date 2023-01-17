@@ -1,0 +1,48 @@
+<bcp-title size="lg" family="regular">Home section</bcp-title>
+<hr />
+
+<bcp-breadcrumb
+  [data]="arrList"
+  (itemClick)="handleClick($event)"
+></bcp-breadcrumb>
+
+<bcp-tracking class="mt-4">
+  <bcp-tracking-item state="done">
+    <bcp-paragraph family="demi" size="lg">Operación enviada</bcp-paragraph>
+    <bcp-paragraph size="sm" family="regular"
+      >La operación fue enviada al Banco de Crédito - BCP.</bcp-paragraph
+    >
+    <bcp-icon
+      accessible-name=""
+      accessible-title=""
+      name="calendar-clock-l"
+    ></bcp-icon>
+    <span>25 Feb. 2020 - 09:55</span>
+  </bcp-tracking-item>
+  <bcp-tracking-item state="active">
+    <bcp-paragraph family="demi" size="lg">
+      Operación ingresada al BCR
+    </bcp-paragraph>
+    <bcp-paragraph size="sm" family="regular"
+      >La operación ingresó al Banco Central de Reserva (BCR) y será procesada a
+      partir de las 10:30 a.m. del día de mañana.
+    </bcp-paragraph>
+    <bcp-icon
+      accessible-name=""
+      accessible-title=""
+      name="calendar-clock-l"
+    ></bcp-icon>
+    <span>25 Feb. 2020 - 09:55</span>
+  </bcp-tracking-item>
+  <bcp-tracking-item state="error">
+    <bcp-paragraph size="sm" family="regular" color="onsurface-600">
+      La operación no ha sido procesada por el banco local de Cobre Fuerte S.A.C
+    </bcp-paragraph>
+  </bcp-tracking-item>
+  <bcp-tracking-item state="default">
+    <bcp-paragraph size="sm" family="regular" color="onsurface-600">
+      La operación no ha sido procesada por el banco local de Cobre Fuerte
+      S.A.C.
+    </bcp-paragraph>
+  </bcp-tracking-item>
+</bcp-tracking>
