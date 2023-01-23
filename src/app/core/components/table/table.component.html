@@ -15,6 +15,7 @@
     accessible-aria-label="Siguiente"
     class="mt-2 ml-4"
     (ctrlClick)="registerClient()"
+    [disabled]="nameControl.invalid"
   >
     <bcp-icon name="plus-r"></bcp-icon>
   </bcp-button>
