@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --project=performance",
+    "build:gzip": "ng build --project=performance && gzipper compress ./dist/performance",
     "build:stats": "ng build --project=performance --stats-json",
     "analyze": "webpack-bundle-analyzer dist/performance/stats.json",
     "watch": "ng build --watch --configuration development --project=performance",

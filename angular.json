@@ -111,6 +111,7 @@
     }
   },
   "cli": {
-    "defaultCollection": "@bcp/schematics"
+    "defaultCollection": "@bcp/schematics",
+    "analytics": false
   }
 }
