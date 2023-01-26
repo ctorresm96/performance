@@ -6,88 +6,94 @@
   (itemClick)="handleClick($event)"
 ></bcp-breadcrumb>
 
-<bcp-tracking class="mt-4">
-  <bcp-tracking-item state="done">
-    <bcp-paragraph family="demi" size="lg">Operación enviada</bcp-paragraph>
-    <bcp-paragraph size="sm" family="regular"
-      >La operación fue enviada al Banco de Crédito - BCP.</bcp-paragraph
-    >
-    <bcp-icon
-      accessible-name=""
-      accessible-title=""
-      name="calendar-clock-l"
-    ></bcp-icon>
-    <span>25 Feb. 2020 - 09:55</span>
-  </bcp-tracking-item>
-  <bcp-tracking-item state="active">
-    <bcp-paragraph family="demi" size="lg">
-      Operación ingresada al BCR
-    </bcp-paragraph>
-    <bcp-paragraph size="sm" family="regular"
-      >La operación ingresó al Banco Central de Reserva (BCR) y será procesada a
-      partir de las 10:30 a.m. del día de mañana.
-    </bcp-paragraph>
-    <bcp-icon
-      accessible-name=""
-      accessible-title=""
-      name="calendar-clock-l"
-    ></bcp-icon>
-    <span>25 Feb. 2020 - 09:55</span>
-  </bcp-tracking-item>
-  <bcp-tracking-item state="error">
-    <bcp-paragraph size="sm" family="regular" color="onsurface-600">
-      La operación no ha sido procesada por el banco local de Cobre Fuerte S.A.C
-    </bcp-paragraph>
-  </bcp-tracking-item>
-  <bcp-tracking-item state="default">
-    <bcp-paragraph size="sm" family="regular" color="onsurface-600">
-      La operación no ha sido procesada por el banco local de Cobre Fuerte
-      S.A.C.
-    </bcp-paragraph>
-  </bcp-tracking-item>
-</bcp-tracking>
+<div class="home__tracking">
+  <bcp-tracking class="mt-4">
+    <bcp-tracking-item state="done">
+      <bcp-paragraph family="demi" size="lg">Operación enviada</bcp-paragraph>
+      <bcp-paragraph size="sm" family="regular"
+        >La operación fue enviada al Banco de Crédito - BCP.</bcp-paragraph
+      >
+      <bcp-icon
+        accessible-name=""
+        accessible-title=""
+        name="calendar-clock-l"
+      ></bcp-icon>
+      <span>25 Feb. 2020 - 09:55</span>
+    </bcp-tracking-item>
+    <bcp-tracking-item state="active">
+      <bcp-paragraph family="demi" size="lg">
+        Operación ingresada al BCR
+      </bcp-paragraph>
+      <bcp-paragraph size="sm" family="regular"
+        >La operación ingresó al Banco Central de Reserva (BCR) y será procesada
+        a partir de las 10:30 a.m. del día de mañana.
+      </bcp-paragraph>
+      <bcp-icon
+        accessible-name=""
+        accessible-title=""
+        name="calendar-clock-l"
+      ></bcp-icon>
+      <span>25 Feb. 2020 - 09:55</span>
+    </bcp-tracking-item>
+    <bcp-tracking-item state="error">
+      <bcp-paragraph size="sm" family="regular" color="onsurface-600">
+        La operación no ha sido procesada por el banco local de Cobre Fuerte
+        S.A.C
+      </bcp-paragraph>
+    </bcp-tracking-item>
+    <bcp-tracking-item state="default">
+      <bcp-paragraph size="sm" family="regular" color="onsurface-600">
+        La operación no ha sido procesada por el banco local de Cobre Fuerte
+        S.A.C.
+      </bcp-paragraph>
+    </bcp-tracking-item>
+  </bcp-tracking>
+</div>
 
-<p class="home__paragraph">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor lorem
-  quis lectus ultrices lacinia. Vestibulum eget ligula ac nisl aliquam
-  scelerisque id a risus. Curabitur rhoncus ullamcorper orci a convallis. Donec
-  eget tellus quam. Vivamus pulvinar rhoncus mattis. Morbi vel erat nunc.
-  Suspendisse et laoreet ipsum. Suspendisse non facilisis lectus. Vestibulum
-  ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-  Cras ut enim interdum, porta diam in, mollis magna. Nullam dignissim sed sem
-  vestibulum ultricies. Aenean quis congue orci. Proin iaculis, ante eget
-  vulputate ornare, nisl justo mollis ante, non euismod quam nunc vitae eros.
-  Maecenas dapibus orci nibh, eu hendrerit urna accumsan nec. Sed scelerisque
-  hendrerit ex, et finibus libero aliquet eget. Orci varius natoque penatibus et
-  magnis dis parturient montes, nascetur ridiculus mus. Mauris et egestas quam.
-  Aenean sagittis, risus nec mollis sollicitudin, nibh risus posuere leo, tempor
-  scelerisque felis velit sit amet ante. Phasellus volutpat aliquam maximus.
-  Etiam gravida magna sed urna faucibus, non venenatis odio iaculis. In porta
-  leo erat, non gravida ante cursus vitae. Quisque nec venenatis tortor. Quisque
-  sed nulla eu urna ultricies varius quis vitae risus. Praesent turpis diam,
-  luctus vel tempus at, malesuada eget urna. Phasellus a justo id massa luctus
-  semper. Sed sit amet rutrum lacus. Aliquam ac elit convallis sem imperdiet
-  aliquet id eu sapien. Sed eget nisi ullamcorper, accumsan massa eu, euismod
-  velit. Donec hendrerit nisi tellus, eu auctor felis mollis nec. Vestibulum
-  fringilla convallis felis eget pulvinar. Nullam est neque, elementum non
-  volutpat vitae, feugiat vitae lectus. Donec ac massa fermentum, lacinia turpis
-  eget, ultricies eros. Mauris rhoncus hendrerit scelerisque. Quisque ultricies,
-  dui non aliquet tristique, nisl lacus dictum neque, at fermentum nibh magna id
-  urna. Quisque faucibus ultricies urna congue euismod. Sed porttitor venenatis
-  sem. Fusce feugiat nisi ac orci volutpat, non ullamcorper nisi elementum. Orci
-  varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-  mus. Integer sollicitudin ac mauris ut lobortis. Praesent finibus blandit
-  nisl, vel vestibulum nisl consequat nec. Etiam ante purus, ornare a euismod
-  et, fringilla nec felis. Curabitur nibh quam, lobortis iaculis iaculis ut,
-  hendrerit et sapien. Morbi dapibus magna magna, ullamcorper gravida augue
-  egestas at. In turpis purus, faucibus non dolor eget, accumsan euismod orci.
-  Etiam blandit eget libero nec porta. In at ullamcorper sem, fermentum pretium
-  odio. Mauris neque risus, sodales ac justo a, faucibus hendrerit mi. Aenean
-  mauris tortor, consectetur mattis gravida eu, suscipit ut ex. Integer sit amet
-  varius magna, at fringilla dui. Mauris id consequat magna. Donec luctus leo
-  nec arcu commodo, ut feugiat ante pretium. Nullam egestas convallis dolor in
-  aliquet. Curabitur augue arcu, congue eget ipsum a, congue lobortis ligula.
-  Praesent congue odio neque, at ullamcorper ex scelerisque in. Etiam lacinia
-  arcu sed felis condimentum, nec pellentesque tortor pellentesque. Aenean a
-  sollicitudin orci, vitae lacinia risus.
-</p>
+<div class="home__container">
+  <p class="home__container-example">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor lorem
+    quis lectus ultrices lacinia. Vestibulum eget ligula ac nisl aliquam
+    scelerisque id a risus. Curabitur rhoncus ullamcorper orci a convallis.
+    Donec eget tellus quam. Vivamus pulvinar rhoncus mattis. Morbi vel erat
+    nunc. Suspendisse et laoreet ipsum. Suspendisse non facilisis lectus.
+    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+    cubilia curae; Cras ut enim interdum, porta diam in, mollis magna. Nullam
+    dignissim sed sem vestibulum ultricies. Aenean quis congue orci. Proin
+    iaculis, ante eget vulputate ornare, nisl justo mollis ante, non euismod
+    quam nunc vitae eros. Maecenas dapibus orci nibh, eu hendrerit urna accumsan
+    nec. Sed scelerisque hendrerit ex, et finibus libero aliquet eget. Orci
+    varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+    mus. Mauris et egestas quam. Aenean sagittis, risus nec mollis sollicitudin,
+    nibh risus posuere leo, tempor scelerisque felis velit sit amet ante.
+    Phasellus volutpat aliquam maximus. Etiam gravida magna sed urna faucibus,
+    non venenatis odio iaculis. In porta leo erat, non gravida ante cursus
+    vitae. Quisque nec venenatis tortor. Quisque sed nulla eu urna ultricies
+    varius quis vitae risus. Praesent turpis diam, luctus vel tempus at,
+    malesuada eget urna. Phasellus a justo id massa luctus semper. Sed sit amet
+    rutrum lacus. Aliquam ac elit convallis sem imperdiet aliquet id eu sapien.
+    Sed eget nisi ullamcorper, accumsan massa eu, euismod velit. Donec hendrerit
+    nisi tellus, eu auctor felis mollis nec. Vestibulum fringilla convallis
+    felis eget pulvinar. Nullam est neque, elementum non volutpat vitae, feugiat
+    vitae lectus. Donec ac massa fermentum, lacinia turpis eget, ultricies eros.
+    Mauris rhoncus hendrerit scelerisque. Quisque ultricies, dui non aliquet
+    tristique, nisl lacus dictum neque, at fermentum nibh magna id urna. Quisque
+    faucibus ultricies urna congue euismod. Sed porttitor venenatis sem. Fusce
+    feugiat nisi ac orci volutpat, non ullamcorper nisi elementum. Orci varius
+    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    Integer sollicitudin ac mauris ut lobortis. Praesent finibus blandit nisl,
+    vel vestibulum nisl consequat nec. Etiam ante purus, ornare a euismod et,
+    fringilla nec felis. Curabitur nibh quam, lobortis iaculis iaculis ut,
+    hendrerit et sapien. Morbi dapibus magna magna, ullamcorper gravida augue
+    egestas at. In turpis purus, faucibus non dolor eget, accumsan euismod orci.
+    Etiam blandit eget libero nec porta. In at ullamcorper sem, fermentum
+    pretium odio. Mauris neque risus, sodales ac justo a, faucibus hendrerit mi.
+    Aenean mauris tortor, consectetur mattis gravida eu, suscipit ut ex. Integer
+    sit amet varius magna, at fringilla dui. Mauris id consequat magna. Donec
+    luctus leo nec arcu commodo, ut feugiat ante pretium. Nullam egestas
+    convallis dolor in aliquet. Curabitur augue arcu, congue eget ipsum a,
+    congue lobortis ligula. Praesent congue odio neque, at ullamcorper ex
+    scelerisque in. Etiam lacinia arcu sed felis condimentum, nec pellentesque
+    tortor pellentesque. Aenean a sollicitudin orci, vitae lacinia risus.
+  </p>
+</div>
